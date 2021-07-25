@@ -1,0 +1,29 @@
+
+* {
+    color: #eee;
+    font-size: 30px;
+}
+.bg {
+    background-color: #000000;
+}
+
+
+.discordbutton{
+    background: transparent;
+    color:white;
+    font-weight: bolder;
+    padding:0.5em 1em;
+    font-size: 1.1em;
+    width:105px;
+    height:45px;
+    border:none;
+    box-shadow: 0 2px 25px rgb(166, 79, 219);
+    background: rgb(166, 79, 219);
+    transition: 0.1s ease-out;
+    &:hover{
+        transform:scale(1.1,1.1);
+    }
+    &:active{
+        transform:scale(1.2,1);
+    }
+}
