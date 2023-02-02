@@ -12,7 +12,7 @@
 
   .bn13 {
     padding: 0.65em 1.6em;
-    border: 3px solid #a64fdb;
+    border: 3px solid #79aaf9;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
@@ -29,14 +29,14 @@
   }
   
   .bn13:hover {
-    background-color: #a64fdb;
+    background-color: #79aaf9;
     color: white;
   }
 
   .bn14 {
     display: inline-block;
     padding: 0.65em 1.6em;
-    border: 3px solid #a64fdb;
+    border: 3px solid #79aaf9;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
@@ -52,7 +52,7 @@
   }
   
   .bn14:hover {
-    background-color: #a64fdb;
+    background-color: #79aaf9;
     color: white;
   }
 
