@@ -12,14 +12,14 @@
 
   .bn13 {
     padding: 0.65em 1.6em;
-    border: 3px solid #79aaf9;
+    border: 3px solid #00ffff;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    color: #79aaf9;
+    color: #00ffff;
     text-align: center;
     transition: all 0.2s;
     background-color: black;
@@ -36,14 +36,14 @@
   .bn14 {
     display: inline-block;
     padding: 0.65em 1.6em;
-    border: 3px solid #79aaf9;
+    border: 3px solid #00ffff;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    color: #79aaf9;
+    color: #00ffff;
     text-align: center;
     transition: all 0.2s;
     background-color: black;
@@ -52,7 +52,7 @@
   }
   
   .bn14:hover {
-    background-color: #79aaf9;
+    background-color: #00ffff;
     color: white;
   }
 
