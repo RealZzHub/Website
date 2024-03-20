@@ -1,34 +1,67 @@
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" media="screen" href="main.css">
-    <script>
-        function Copy() {
-          var Text = document.getElementById("textxd")
-          Text.select()
-          Text.setSelectionRange(0, 99999)
-          navigator.clipboard.writeText(Text.value)
-          alert("Copied loadstring To Clipboard!")
-        }
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" media="screen" href="main.css">
+        <link rel="icon" href="icon.png">
+    </head>
+    <body class="bg">
+        <audio loop src="yeat.mp3" id="music"></audio>
+        <div id="particles-js">
+            <script src="particles.js"></script>
+            <script src="app.js"></script>
+            <script src="rythm.js"></script>
+        </div>
+        <div class="logo-container">
+            <img src="logo.png" class="logo" id="logo">
+        </div>
+        <div class="text-container" style="top: 9%;">
+            <a style="color: #23c4ff;" id="lol"></a>
+        </div>
+        <div class="text-container" style="top: 16%;">
+            <a style="color: #C532FF" class="hoverunderline" href="https://discord.com/invite/9G8p7Ty3Ue">Discord</a>
+        </div>
+            <div class="text-container" style="top: 20%;">
+            <a style="color: #C532FF" class="hoverunderline" href="https://realzzhub.xyz/script.lua">Script</a>
+        </div>
+        <p class="devstext">Developers: realoneofu, DecerZz</p>
+        <script>
+            var lol = true
+            document.addEventListener("click", function() {
+                if (lol) {
+                    var music = document.getElementById("music")
+                    var rythm = new Rythm()
+                    music.volume = 0.03
+                    rythm.addRythm("logo", "text-shadow", 0, 0.5)
+                    rythm.connectExternalAudioElement(music)
+                    music.play()
+                    rythm.start()
+                    lol = false
+                }
+            })
+        </script>
+        <script>
+            function SetTitle(txt) {
+                document.title = txt
+            }
         
-    </script>
-</head>
-
-<body class="bg">
-    <input type="text" value='loadstring(game:HttpGet("https://realzzhub.xyz/script.lua"))()' id="textxd" hidden>
-
-    <div id="particles-js">
-
-        <script src="particles.js"></script>
-        <script src="app.js"></script>
-    </div>
-    <button onclick="location.href='discord.html'" class="bn13">Discord Server</button>
-    <button onclick="Copy()" class="bn14">Script</button>
-    <p class="realzztext">RealZzHub</p>
-    <p class="quotetext">"He is one of the sole reasons that T.O is infested with exploiters." - thedeadcreator</p>
-    <p class="devstext">Developers: realoneofu, DecerZz</p>
-
-</body>
-
+            function SetMOTD(txt) {
+                document.getElementById("lol").innerHTML = txt
+            }
+        
+            function typeWriter(item, txt, cur, backwards, speed) {
+                if (cur.length < txt.length && !backwards) {
+                    cur += txt.charAt(cur.length)
+                    item(cur)
+                    if (cur.length == txt.length) backwards = true
+                } else if (cur.length != 0 && backwards) {
+                    cur = cur.slice(0, -1)
+                    item(cur)
+                    if (1 == cur.length) backwards = false
+                }
+                setTimeout(() => typeWriter(item, txt, cur, backwards, speed), speed)
+            }
+            typeWriter(SetTitle, "‎realzzhub.xyz", document.title, false, 250)
+            typeWriter(SetMOTD, "‎In the game since 2021!‎", document.getElementById("lol").innerHTML, false, 250)
+        </script>
+    </body>
 </html>
