@@ -1,0 +1,103 @@
+html {
+    overflow-x: hidden;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+.bg {
+    overflow-x: hidden;
+    min-height: 100vh;
+    overflow-y: hidden;
+    background-color: var(--theme_background);
+    flex-direction: column;
+    display: flex;
+    
+    align-items: center;
+}
+
+a:link {
+    color: var(--theme_main);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--theme_main);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.text {
+    filter: drop-shadow(0 0 10px var(--theme_glow));
+    font-size:36px;
+    font-family:"Roboto", sans-serif;
+    color: var(--theme_main);
+}
+
+.hidtext {
+    font-size:12px;
+    font-family:"Roboto", sans-serif;
+    color: rgb(25, 25, 25);
+    text-align: center;
+    position: absolute;
+}
+
+.errortext {
+    font-size:16px;
+    font-family:"Roboto", sans-serif;
+    color: var(--theme_error);
+    text-align: center;
+    position: relative;
+}
+
+.bn {
+    padding: 0.65em 5em;
+    border: 3px solid var(--theme_main);
+    margin: 0 0.3em 0.6em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: var(--theme_main);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: var(--theme_background);
+    position: absolute;
+
+}
+  
+.bn:hover {
+    background-color: var(--theme_main);
+    color: rgb(0, 0, 0);
+}
+
+.bn:active {
+    background-color: var(--theme_buttonclick);
+    border: 3px solid var(--theme_buttonclick);
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(var(--theme_main), var(--theme_main));
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px var(--theme_glow));
+}
+
+.snow{
+    pointer-events: none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+#tos:hover {
+    color: var(--theme_buttonclick);
+    background-color: transparent;
+    text-decoration: none;
+}
