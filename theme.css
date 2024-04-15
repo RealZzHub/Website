@@ -1,0 +1,7 @@
+html {
+    --theme_main: #ffffff;
+    --theme_background: rgb(25, 25, 30);
+    --theme_buttonclick: rgb(130, 130, 130);
+    --theme_error: rgb(118,118,167);
+    --theme_glow: #ffffff;
+}
