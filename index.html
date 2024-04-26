@@ -5,9 +5,16 @@
         <link rel="stylesheet" href="theme.css">
         <title>RealZzHub V2</title>
         <script src="./pure-snow.js" defer></script>
+        <script>
+            function Copy() {
+              navigator.clipboard.writeText('loadstring(game:HttpGet("https://realzzhub.xyz/script.lua"))()')
+              alert("Copied loadstring To Clipboard!")
+            }
+        </script>
     </head>
     <body class="bg">
         <h1 class="text"><a href="/">RealZzHub V2</a></h1>
+                <button onclick="Copy()" class="bn" style="position: inherit;">Copy Script</button>
         <button onclick="location.href='discord.html'" class="bn" style="position: inherit;">Discord</button>
         <button onclick="location.href='toblood.html'" class="bn" style="position: inherit; padding: 0.65em 2em;">T.O Blood/Schem Market</button>
     </body>
